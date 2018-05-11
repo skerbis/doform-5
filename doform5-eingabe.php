@@ -3,9 +3,8 @@
  *=============================================
  * REDAXO-Modul: do form! archive
  * Bereich: Eingabe 
- */
-$doformversion="5.1.2";
- /**
+ * Version: 5.3.0-dev
+ * 5/2018 DSGVO Special
  * ab Redaxo Version: 4.5
  * Hinweise:
  * Formulargenerator für PHPMAILER
@@ -21,11 +20,9 @@ $doformversion="5.1.2";
  
 $uploadon=false;  // UPLOADS AKTIVIEREN true oder false
 $sessionson=false;  // SESSIONS AKTIVIEREN true oder false
-$bccon=false;  // BCC-Feld AKTIVIEREN true oder false
-$sslon=false; // SSL-Unterstützung aktivieren
+$bccon=true;  // BCC-Feld AKTIVIEREN true oder false
 $weditor='tinymce'; // Welches WYSIWYG-addon soll verwendet werden? z.B.: ckeditor oder tinymce 
 $editstyle='tinyMCEEditor'; // Lege die CSS-Klasse für den WYSIWYG-Editor fest (z.B. ckeditor oder tinyMCEEditor) 
-
  
 // Definition des Standard-Formulars 
 $defaultdata="
@@ -310,19 +307,6 @@ else { echo' <div class="formgenerror"> PHPMailer wurde nicht gefunden oder ist 
  
  
     </span><br />
- <?php if ($sslon==true) { ?>   
-   SSL-Übertragung<span class="infotext"> 
-<select   name="VALUE[18]">
-  <option value='nein' <?php if ("REX_VALUE[18]" == 'nein') echo 'selected'; ?>>nein</option>
-  <option value='SSL' <?php if ("REX_VALUE[18]" == 'SSL') echo 'selected'; ?>>Ja</option >
-</select>
-<br />
- 
- 
- 
-    </span>
-   <div class="infotext">(<em>ssldomain muss in der Modul-Ausgabe definiert sein</em>)</div>
-   <?php } ?>   
   </div>
   <div class="doleft"><strong>E-Mail geht an:</strong><br />
     <input type="email" name="VALUE[1]" value="REX_VALUE[1]" class="inp100" />
