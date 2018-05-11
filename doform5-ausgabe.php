@@ -379,6 +379,7 @@ for ($i = 0; $i < count($form_elements); $i++) {
             $formoutput[] = '<div class="formhinweis">' . $element[1] . '<input type="hidden" title="' . $element[1] . '" name="FORM[' . $formname . '][el_' . $i . ']" id="el_' . $i . '" value="' . $element[1] . '"/></div>';
             break;
         case "HTML":
+        case "html":
             $formoutput[] = '<div class="formhtml">' . $element[1] . '</div>';
             break;
         case "exlink":
