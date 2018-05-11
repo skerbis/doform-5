@@ -7,7 +7,6 @@
  *==================================================*/
 //   KONFIGURATION
 $ftitel                      = 'REX_VALUE[4]'; // Überschrift / Betreff der E-Mail
-$ssldomain                   = $_SERVER['HTTP_HOST'];
 $style                       = 'class="formerror"'; // Label-Stildefinition für Fehler
 $bstyle                      = 'formerror'; // Formfield-Fehler-Klasse
 $formname                    = "doform5" . "REX_SLICE_ID"; // Formular ID generiert aus SLICE ID
@@ -147,19 +146,6 @@ $linkclass    = "";
 $cupload      = 0;
 $fcounter     = 1;
 $xcounter     = 1;
-/* --------------------------- SSL-Schalter ------------ */
-if ('REX_VALUE[18]' == "SSL") {
-    // SSL - SCHALTER
-    if ($REX['REDAXO'] != 1) {
-        if ($_SERVER['SERVER_PORT'] != 443) {
-            $datei = $_SERVER['REQUEST_URI'];
-            // Domain anpassen
-            $ziel  = $ssldomain . $datei;
-            header("Location: $ziel");
-            exit();
-        }
-    }
-}
 
 if (!function_exists('is_old_android')) {
     function is_old_android($version = '4.2.0')
