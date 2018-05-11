@@ -6,10 +6,10 @@
  * 5/2018 DSGVO Special
  *==================================================*/
 //   KONFIGURATION
-$ftitel                      = 'REX_VALUE[4]'; // Überschrift / Betreff der E-Mail
+$ftitel                      = '<strong>FVN Website Nachricht</strong>: REX_VALUE[4]'; // Überschrift / Betreff der HTML-E-Mail
 $style                       = 'class="formerror"'; // Label-Stildefinition für Fehler
 $bstyle                      = 'formerror'; // Formfield-Fehler-Klasse
-$formname                    = "doform5" . "REX_SLICE_ID"; // Formular ID generiert aus SLICE ID
+$formname                    = "doform" . "REX_SLICE_ID"; // Formular ID generiert aus SLICE ID
 $formdatum                   = date("d.m.Y"); // Datum
 $formzeit                    = date("H:i"); // Uhrzeit
 $formreq                     = '&nbsp;<strong class="formreq">*</strong>'; // Markierung von Pflichtfeldern
@@ -446,7 +446,7 @@ for ($i = 0; $i < count($form_elements); $i++) {
             }
             $formoutput[] = $hidden . '
               <div class="fieldblock ' . $warnblock["el_" . $i] . '"> <span class="checkspan"><label ' . $warning["el_" . $i] . ' for="el_' . $i . '" >' . $element[1] . $req . '</label>
-                <input type="checkbox" title="' . $element[1] . '" class="formcheck" name="FORM[' . $formname . '][el_' . $i . ']" id="el_' . $i . '"value="X" ' . $cchecked . ' /></span><br/></div>';
+                <input type="checkbox" title="' . $element[4] . '" class="formcheck" name="FORM[' . $formname . '][el_' . $i . ']" id="el_' . $i . '"value="X" ' . $cchecked . ' /></span><br/></div>';
             break;
         // Radio-Buttons von Markus Feustel 07.01.2008
         case "radio":
