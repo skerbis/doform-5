@@ -6,12 +6,11 @@ WIKI und FAQ findet ihr im REPO
 Es handelt sich hierbei um eine kostenlose und frei verwendbare Version, entsprechend der Lizenz Ihrer Redaxo-Installation. Eine Garantie oder Gewährleistung auf Funktionalität und Fehlerfreiheit wird nicht geleistet. Die KLXM Crossmedia haftet nicht für eventuell auftretenden Datenverlust. Bei Problemen, wenden Sie sich bitte an das Redaxo-Forum. 
 Javascripte und CSS-Definitionen sind nicht Bestandteil der classic Version.
 
+### Version 5.3.0-dev
+- SSL-Schalter entfernt - Domain sollte https:// sein oder SSL-Weiche sollte im Template eingebaut werden.
+- Checkbox-Label kann html aufnehmen, z.B. Link zur AGB 
 
-### Version 5.1.2 bye bye
-Letzte Version für Redaxo 4.x
-Gerne forken und selbst weitermachen. 
-
-### Version 5.1 
+### Version 5.1.x 
 subject| 
 Textfeld als Betreff
 und Session kann nun als Wert in alle Textfelder übernommen werden. 
