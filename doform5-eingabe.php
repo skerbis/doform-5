@@ -275,7 +275,7 @@ function doIt(theValue)
 </script>
  
  
-<div class="formnavi"><a href="https://github.com/skerbis/do-form-5/wiki" target="_blank">WIKI</a><a href="#anleitung" id="anzeige" onclick="javascript:document.getElementById('anleitung').style.display = 'block'" >Beispiel-einblenden </a> do form! - Version: <?php echo $doformversion; ?>&nbsp;</div>
+<div class="formnavi"><a href="https://github.com/skerbis/do-form-5/wiki" target="_blank">WIKI</a><a href="#anleitung" id="anzeige" onclick="javascript:document.getElementById('anleitung').style.display = 'block'" >Beispiel-einblenden </a>&nbsp;</div>
 <br/><?php $phpmcheck= OOAddon::isActivated('phpmailer'); 
 if ($phpmcheck == 1)
 {}
