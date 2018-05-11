@@ -2,7 +2,8 @@
 /**==================================================
  * REDAXO-Modul: do form!  http://klxm.de/produkte/
  * Bereich: Ausgabe
- * Version: 5.1.2b - 1/2017 archive
+ * Version: 5.3.0-dev
+ * 5/2018 DSGVO Special
  *==================================================*/
 //   KONFIGURATION
 $ftitel                      = 'REX_VALUE[4]'; // Überschrift / Betreff der E-Mail
