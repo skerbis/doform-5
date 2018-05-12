@@ -4,9 +4,12 @@ do form! 5
 **Die wirklich aller aller aller aller letzte Version für REDAXO ab 4.5**
 
 Noch ältere Versionen gibt es hier: https://github.com/rexdump/doform_archive
+Version für REDAXO 5.x: https://github.com/skerbis/doform-6
 
 Letzte Version von do form! für REDAXO 4.x
 WIKI und FAQ findet ihr im REPO
+
+
 
 Es handelt sich hierbei um eine kostenlose und frei verwendbare Version, entsprechend der Lizenz Ihrer Redaxo-Installation. Eine Garantie oder Gewährleistung auf Funktionalität und Fehlerfreiheit wird nicht geleistet. Die KLXM Crossmedia haftet nicht für eventuell auftretenden Datenverlust. Bei Problemen, wenden Sie sich bitte an das Redaxo-Forum. 
 Javascripte und CSS-Definitionen sind nicht Bestandteil der classic Version.
