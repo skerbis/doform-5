@@ -1,7 +1,9 @@
 do form! 5
 =================
 
-**Die wirklich aller aller aller aller letzte Version für REDAXO 4.x**
+**Die wirklich aller aller aller aller letzte Version für REDAXO ab 4.5**
+
+Noch ältere Versionen gibt es hier: https://github.com/rexdump/doform_archive
 
 Letzte Version von do form! für REDAXO 4.x
 WIKI und FAQ findet ihr im REPO
